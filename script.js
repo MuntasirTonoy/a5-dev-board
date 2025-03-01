@@ -52,14 +52,17 @@ let index = 0;
 document.getElementById("theme-btn").addEventListener("click", function () {
   let mainBody = document.getElementById("main-body");
   mainBody.classList.remove("bg-slate-200");
-  // Remove the previous color class
   for (let color of colors) {
     mainBody.classList.remove(color);
   }
-
-  // Add the next color
   mainBody.classList.add(colors[index]);
-
-  // Update index (loop back to start when reaching the end)
   index = (index + 1) % colors.length;
 });
+
+const today = new Date();
+const day = today.toLocaleString("default", { weekday: "long" });
+const date = today.getDate();
+const month = today.toLocaleString("default", { month: "long" });
+const year = today.getFullYear();
+document.getElementById("day").innerHTML = day;
+document.getElementById("date").innerHTML = ` ${date} ${month},  ${year}`;
