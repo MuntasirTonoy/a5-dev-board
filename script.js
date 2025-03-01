@@ -40,17 +40,26 @@ document
     document.getElementById("history-container").innerHTML = "";
   });
 // theme change logics
-function themeChange() {}
+let colors = [
+  "bg-red-200",
+  "bg-green-200",
+  "bg-blue-200",
+  "bg-yellow-200",
+  "bg-gray-200",
+];
+let index = 0;
+
 document.getElementById("theme-btn").addEventListener("click", function () {
-  const themeColors = [
-    "bg-red-500",
-    "bg-green-500",
-    "bg-blue-500",
-    "bg-yellow-500",
-    "bg-purple-500",
-    "bg-pink-500",
-  ];
-  let randomColor = themeColors[Math.floor(Math.random() * themeColors.length)];
-  const mainBody = document.getElementById("main-body");
-  console.log(randomColor);
+  let mainBody = document.getElementById("main-body");
+  mainBody.classList.remove("bg-slate-200");
+  // Remove the previous color class
+  for (let color of colors) {
+    mainBody.classList.remove(color);
+  }
+
+  // Add the next color
+  mainBody.classList.add(colors[index]);
+
+  // Update index (loop back to start when reaching the end)
+  index = (index + 1) % colors.length;
 });
