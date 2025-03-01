@@ -40,3 +40,17 @@ document
     document.getElementById("history-container").innerHTML = "";
   });
 // theme change logics
+function themeChange() {}
+document.getElementById("theme-btn").addEventListener("click", function () {
+  const themeColors = [
+    "bg-red-500",
+    "bg-green-500",
+    "bg-blue-500",
+    "bg-yellow-500",
+    "bg-purple-500",
+    "bg-pink-500",
+  ];
+  let randomColor = themeColors[Math.floor(Math.random() * themeColors.length)];
+  const mainBody = document.getElementById("main-body");
+  console.log(randomColor);
+});
