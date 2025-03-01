@@ -24,12 +24,13 @@ for (const completeBtn of completeBtns) {
     let taskAssigned = document.getElementById("taskAssigned").innerText;
     taskAssigned = parseInt(taskAssigned) - 1;
     document.getElementById("taskAssigned").innerText = "0" + taskAssigned;
-    if (taskAssigned === 0) {
-      alert("contrats");
-    }
+
     let completeCount = document.getElementById("complete-count").innerText;
     completeCount = parseInt(completeCount) + 1;
     document.getElementById("complete-count").innerText = completeCount;
+    if (taskAssigned === 0) {
+      alert("congratulations , You've Completed All Tasks");
+    }
   });
 
   //   clear history event
