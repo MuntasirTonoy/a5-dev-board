@@ -25,30 +25,32 @@
   <body id="main-body" class="bg-slate-200 font-poppins">
     <!-- main heading with logo & title -->
     <div
-      class="flex items-center justify-between my-5 mx-20 px-5 py-5 bg-white rounded-xl"
+      class="flex items-center justify-between mt-10 mb-5 lg:mx-20 mx-5 lg:p-5 p-3 bg-white rounded-xl"
     >
       <div class="flex gap-2 items-center">
-        <img src="assets/logo.png" alt="" />
-        <h1 class="text-4xl">
+        <img src="assets/logo.png" alt="" class="lg:h-full h-7" />
+        <h1 class="lg:text-4xl text-xl">
           <span>Dev</span><span class="font-semibold">Board</span>
         </h1>
       </div>
       <button
         id="backDeskBtn"
-        class="bg-blue-700 text-white font-semibold py-2 px-4 rounded-md"
+        class="bg-blue-700 text-white font-semibold lg:text-base text-sm py-2 px-4 rounded-md"
       >
-        Back to besk
+        Back to Desk
       </button>
     </div>
-    <h1 class="text-center font-semibold text-3xl my-5">Blogs</h1>
+    <h1 class="lg:text-center ml-6 lg:ml-0 font-semibold text-3xl my-5">
+      Blogs
+    </h1>
     <!-- blog containers -->
-    <div class="bg-white rounded-lg mx-20 mb-5">
-      <div class="p-5 font-semibold text-xl text-gray-800">
+    <div class="bg-white rounded-lg lg:mx-20 mx-5 mb-10">
+      <div class="p-5 font-semibold lg:text-xl text-lg text-gray-800">
         Question-1 : What are the different ways to select an element in the
         DOM?
       </div>
       <hr class="border-b-1 border-dashed border-gray-300 w-full" />
-      <div class="p-5 text-gray-500">
+      <div class="p-4 text-gray-500">
         There are many ways to select an element in JS DOM like <br />
         getElementById() <br />
         getElementsByClassName() <br />
@@ -57,13 +59,13 @@
         querySelectorAll() <br />closest()
       </div>
     </div>
-    <div class="bg-white rounded-lg mx-20 mb-5">
-      <div class="p-5 font-semibold text-xl text-gray-800">
+    <div class="bg-white rounded-lg lg:mx-20 mx-5 mb-5">
+      <div class="p-5 font-semibold lg:text-xl text-lg text-gray-800">
         Question-2: What is the difference between innerHTML, innerText, and
         textContent ?
       </div>
       <hr class="border-b-1 border-dashed border-gray-300 w-full" />
-      <div class="p-5 text-gray-500">
+      <div class="p-4 text-gray-500">
         innerHTML is to get the HTML content including tags inside an element.
         <br />
         innerText is to get the visible text content, excluding HTML tags.
@@ -72,35 +74,35 @@
         an element, without
       </div>
     </div>
-    <div class="bg-white rounded-lg mx-20 mb-5">
-      <div class="p-5 font-semibold text-xl text-gray-800">
+    <div class="bg-white rounded-lg lg:mx-20 mx-5 mb-5">
+      <div class="p-5 font-semibold lg:text-xl text-lg text-gray-800">
         Question-3: What is event delegation in the DOM?
       </div>
       <hr class="border-b-1 border-dashed border-gray-300 w-full" />
-      <div class="p-5 text-gray-500">
+      <div class="p-4 text-gray-500">
         Event delegation is a method in the DOM that allows a parent element to
         manage events for its child elements through event bubbling. Rather than
         adding event listeners to each child element individually, you can
         attach a single listener to a shared ancestor.
       </div>
     </div>
-    <div class="bg-white rounded-lg mx-20 mb-5">
-      <div class="p-5 font-semibold text-xl text-gray-800">
+    <div class="bg-white rounded-lg lg:mx-20 mx-5 mb-5">
+      <div class="p-5 font-semibold lg:text-xl text-lgl text-gray-800">
         Question-4: What is event bubbling in the DOM?
       </div>
       <hr class="border-b-1 border-dashed border-gray-300 w-full" />
-      <div class="p-5 text-gray-500">
+      <div class="p-4 text-gray-500">
         Event bubbling is a mechanism in the DOM where an event begins at the
         target element and then moves upward through its parent elements.
       </div>
     </div>
-    <div class="bg-white rounded-lg mx-20 mb-5">
-      <div class="p-5 font-semibold text-xl text-gray-800">
+    <div class="bg-white rounded-lg lg:mx-20 mx-5 mb-5">
+      <div class="p-5 font-semibold lg:text-xl text-lg text-gray-800">
         Question-5: How do you create, add, and remove elements using
         JavaScript?
       </div>
       <hr class="border-b-1 border-dashed border-gray-300 w-full" />
-      <div class="p-5 text-gray-500">
+      <div class="p-4 text-gray-500">
         To create an element, you can use document.createElement(). You can add
         it to the document using appendChild() or insertBefore(). To remove it,
         use removeChild() or remove().
