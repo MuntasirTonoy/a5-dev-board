@@ -12,7 +12,7 @@ for (const completeBtn of completeBtns) {
     const newhistory = document.createElement("p");
     var taskBox = this.closest(".task-box");
     var taskTitle = taskBox.querySelector(".title").innerText;
-    newhistory.innerText = ` You have Complete The Task ${taskTitle} at ${clickTime} `;
+    newhistory.innerText = ` You have Complete The Task  ${taskTitle}  at ${clickTime} `;
     newhistory.classList.add(
       "bg-slate-200",
       "p-3",
